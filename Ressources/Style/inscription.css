@@ -1,5 +1,5 @@
 body{
-    background-image: -webkit-linear-gradient(#fbb5d2, #cabafe);
+    background-image: -webkit-linear-gradient(var(--light_pink), #cabafe);
     background-size:cover;
     height: 100vh;
     width: 100vw;
@@ -93,7 +93,7 @@ body{
     border: none;
     border-style: none;
     outline: none;
-    caret-color: #fbb5d2;
+    caret-color: var(--light_pink);
     box-shadow: 0px 0px 4px #bdc3c7;
   }
   .input_container input:focus, textarea:focus{
@@ -127,7 +127,7 @@ body{
     text-decoration: none;
     font-size: 3vh;
     color: white;
-    background: #ff589e;
+    background: var(--pink);
     border-style: none;
     border:none;
     outline: none;
@@ -141,3 +141,14 @@ body{
     transform-origin: center;
     z-index: 10;
   }
+
+.CGU{
+	display: flex;
+	justify-content: center;
+	height: 3vh;
+	width: 100%;
+}
+.CGU a{
+	color: #645483;
+	text-decoration: none;
+}

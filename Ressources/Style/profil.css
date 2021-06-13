@@ -1,148 +1,39 @@
-nav{
-    width: 5em;
-    background-color: white;
-
-    position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 9;
-    transition: width 0.5s;
-}
-
-h1,h2,h3,h4,h5,p,a{
-    margin: 0;
-    padding: 0;
-}
-
-.slide-menu:hover {
-  width: 15em;
-}
-
-header{
-    width: 100vw;
-    height: 5em;
-    top: 0;
-
-    position: fixed;
-
-    background-color: white;
-
-    z-index: 10;
-
-    display: flex;
-    flex-direction: row;
-}
-
-header .home_logo{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 5em;
-    height: 5em;
-    z-index: 11;
-    border-right: solid 1px #f2f3f7;
-    border-bottom: solid 1px #f2f3f7;
-}
-
-header .welcome-text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 4em;
-  align-self: flex-end;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 100%;
-}
-
-.welcome-text p{
-    font-size: 1.4em;
-    user-select: none;
-}
-
-.home_logo a{
-    position: absolute;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 12;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.home_logo a img{
-    height: 60%;
-    transition: all 0.3s ease;
-}
-.home_logo a img:hover{
-    transform: scale(1.05);
-}
-
+/*                                          */
+/* CSS DE LA PAGE DE MOFIFICATION DU PROFIL */
+/*                                          */
 
 body{
     margin: 0;
     padding: 0;
+    padding-top: 7em;
     background-color: #f2f3f7;
-
 }
 
 body .content-container{
     position: relative;
     margin-top: 8em;
+
+    margin-top: 1em;
+    margin-bottom:1em;
     margin-left: 8em;
     margin-right: 3em;
-
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 1em;
 
     background-color: white;
-
-    overflow: hidden;
 }
 
-.content-container .profil-container{
-    position: absolute;
-    width: 30%;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    background: #f7f7f7;
+.flex{
     display: flex;
-    justify-content: center;
-}
-
-.profil-container .img-container{
-    margin-top: 2em;
-    width: 12em;
-    height: 12em;
-    background: linear-gradient(127deg, #fbb5d2 0%, #cabafe 91%);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-}
-.img-container .img2-container{
-    background: #f7f7f7;
-    border-radius: 50%;
-    position: absolute;
-    --border:0.2em;
-    top: var(--border);
-    left: var(--border);
-    right: var(--border);
-    bottom: var(--border);
+    align-content: center;
 }
 
 .content-container .form-container{
     margin: 1em;
-    margin-left: 35%;
-    width: 68%;
+    margin-left: 1.5em;
+    width: 40%;
+    position: relative;
 }
 
 .categorie{
@@ -152,15 +43,92 @@ body .content-container{
 }
 
 .categorie h2{
-    margin-bottom: 1em;
-    font-size: 1.6em;
+    font-size: 1.5em;
+    color: #807488;
+    font-weight: bold;
+    user-select: none;
+    margin: 0;
 }
+
 .categorie .item h4{
-    margin-bottom: 0.8em;
+    margin-bottom: 0.2em;
     font-size: 1.3em;
 }
-input{
-    min-width: 6em;
-    max-width: 50%;
-    margin-bottom: 1em;
+.modif_button{
+    position: absolute;
+    right: 0em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border:2px solid #FF589E;
+    border-radius:1em;
+    color: #FF589E;
+    transition:all 0.4s;
+    z-index: 0;
 }
+
+.modif_button:hover{
+    background: #FF589E;
+    color: white;
+}
+
+.form-container input{
+    width:100%;
+    height:3em;
+}
+
+.obligatoire{
+    color: var(--pink);
+}
+
+.button-profil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width:70%;
+    height:3em;
+    margin-top:2em;
+    border-radius:1em;
+}
+  
+.button-profil button {
+    height: 200%;
+    width:  200%;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    background: var(--pink);
+    border-style: none;
+    border:none;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.3s;
+    user-select: none;
+}
+  
+.button-profil button:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transform-origin: center;
+    z-index: 10;
+}
+
+.img_container{
+    width: 50%;
+    user-select: none;
+}
+.img_container img{
+    width: 100%;
+    user-select: none;
+}
+
+
+

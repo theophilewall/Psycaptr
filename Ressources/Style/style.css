@@ -1,35 +1,71 @@
+:root{
+  --pink:#ff589e;
+  --light_pink:#FEA4CA;
+  --gradient: linear-gradient(127deg, var(--pink) 0%, #8261ee 100%);
+  --light_gradient: linear-gradient(127deg, var(--light_pink) 0%, #cabafe 91%);
+}
+
 @font-face {
   font-family: 'Avenir';
   src: url('../Font/Avenir.ttc');
 }
+
 @font-face {
   font-family: 'Nunito-Regular';
   src: url('../Font/Nunito-Regular.ttf');
 }
-html{
+
+html {
   scroll-behavior: smooth;
+  margin: 0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
-a{
+html::-webkit-scrollbar {
+  display: none;
+}
+
+a {
   text-decoration: none;
   z-index: 10000000;
 }
 
 
-p{
+p {
   font-size: 1.2em;
   text-align: justify;
   color: #2d3436;
 }
 
-*
-{
+*{
   font-family:"Nunito-Regular";
 }
+
 *::selection
 {
   color: white;
-  background-color: #ff589e;
+  background-color: var(--light_pink);
+}
+
+/* Permet de centrer un element */
+.centered{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Permet de fixer la taille d'une div conteneur et de la centrer */
+.inner{
+  width: 100%;
+  height: 100%;
+  max-width: 1500px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @-webkit-keyframes autofill {
@@ -56,7 +92,7 @@ input:-webkit-autofill {
 
 .text-fade
 {
-  background: -webkit-linear-gradient(#ff589e, #8261ee);
+  background: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -66,7 +102,9 @@ input:-webkit-autofill {
 body{
   margin: 0 auto !important;
   max-width: 1500px;
+  /* overflow-x: hidden; */
 }
+
 body > * {
   box-sizing: border-box;
 }

@@ -1,0 +1,234 @@
+html {
+    scroll-behavior:auto;
+}
+
+h2{
+    text-align: center;
+    font-size:2.2em;
+    color: var(--light_pink);
+    font-weight: bold;
+    user-select: none;
+}
+
+/* Formulaire */
+.container-form {
+    width: 100%;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Compteur à droite des inputs */
+.count_container {
+    height: 100%;
+    width: 17%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.4s ease;
+}
+
+/* Texte du compteur */
+.count {
+    font-size: 3.5em;
+    color: var(--light_pink);
+
+    font-weight: bold;
+    user-select: none;
+    transition: color 0.4s ease;
+
+}
+
+.count_plus{
+    font-size: 5em;
+}
+/* Container de tous les inputs du formulaire dont le textarea */
+.inputs_container{
+    width:70%;
+    transition: transform 0.4s ease;
+}
+
+/* CSS pour cacher l'input de l'Id */
+.invisible{
+    visibility: hidden;
+    position: absolute;
+}
+
+/* Ligne qui contient l'input et les boutons */
+.user-container {
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-bottom: 0.8em;
+    box-shadow: 0px 0px 2px #bdc3c7;
+    border-radius: 1em;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+
+.user-container,textarea {
+    transition: transform 0.5s ease;
+}
+
+.user-description {
+    box-shadow: none;
+    margin-bottom: 0.1em;
+}
+
+.user-description>* {
+    font-size: 1.3em;
+}
+
+
+.container-form:focus-within .valider_changement{
+    width:10%;
+    opacity: 1;
+}
+
+
+.container-form:focus-within .valider_changement button>*{
+    opacity: 1;
+}
+.container-form:focus-within .valider_changement button{
+    visibility: visible;
+}
+.container-form:hover .inputs_container {
+    /* transform: scale(1.01); */
+    transform-origin: center;
+}
+
+.container-form:focus-within .inputs_container {
+    /* transform: scale(1.01); */
+    transform-origin: center;
+}
+.container-form:focus-within .count_container, .container-form:hover .count_container {
+    transform: scale(1.1);
+    transform-origin: center;
+}
+.container-form:focus-within .count{
+    color: var(--pink);
+}
+
+.container-form:hover .count_container_grand, .container-form:focus-within .count_container_grand{
+    transform: rotate(-90deg) scale(1.1);
+    transform-origin: center;
+}
+
+
+
+
+.user-container{
+    width:60%;
+    background:none;
+    transition: width 0.5s ease;
+}
+
+.container-form input {
+    width: 100%;
+    height:100%;
+    border-style: none;
+    padding-left: 1em;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+    color : #474547;
+    background:white;
+}
+
+.container-form:focus-within .user-container {
+    width: 100%;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus{
+    border: none;
+    border-style: none;
+    outline: none;
+    caret-color: var(--light_pink);
+    background:none; 
+}
+
+
+
+
+.container-form textarea {
+    width: 100%;
+    max-width: 100%;
+    user-select: none;
+    border-style: none;
+    box-shadow: 0px 0px 2px #bdc3c7;
+    border-radius: 1em;
+    padding-left: 1em;
+    font-size: 1.1em;
+    transition: all 0.2s ease;
+    transition: transform 0.5s ease;
+    color: #474547;
+    resize: none;
+    padding-top: 0.7em;
+    box-sizing: border-box;
+    overflow-y: auto;
+    word-wrap:break-word;
+    min-height: 60px;
+}
+
+
+.container-form textarea:focus{
+    transform-origin: center;
+}
+
+
+.line-container .valider_changement{
+    width: 0%;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: none;
+    background: none;
+}
+
+.valider_changement button{
+    height: 200%;
+    width:  200%;
+    visibility:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    border-style: none;
+    border:none;
+    outline: none;
+    overflow: hidden;
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.modify{
+    transition: width 0.3s ease 0.3s;
+}
+.remove{
+    transition: width 0.3s ease 0.6s;
+}
+.modify button{
+    background: #1e90ff;
+}
+
+.remove button{
+    background: var(--pink);
+}
+
+.valider_changement button:hover{
+    transform: scale(1.3);
+}
+
+.valider_changement button>*{
+    opacity: 0;
+}
+

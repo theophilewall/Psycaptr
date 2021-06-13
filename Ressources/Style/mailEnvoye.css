@@ -1,0 +1,48 @@
+body{
+    background-image: var(--light_gradient);
+    background-size:cover;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backup_container{
+    width: 50vh;
+    height: 50vh;
+
+    background-color: white;
+    opacity: 0.9;
+    backdrop-filter: blur(10px) saturate(200%);
+    border-radius: 2em;
+    box-shadow: 0px 0px 10px #bdc3c7;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    overflow: hidden;
+}
+
+.backup_container:hover{
+    backdrop-filter: blur(0px) saturate(100%);
+
+}
+
+.backup_container a{
+    
+    color: #645483;
+    font-size: 1em;
+    transition: all 0.2s;
+}
+
+.backup_container a:hover{
+    color: var(--pink);
+}
+
+.backup_container div{
+    font-size: 1.5em;
+    color: var(--pink);
+}

@@ -1,0 +1,48 @@
+body{
+    background-image: var(--light_gradient);
+    background-size:cover;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-family: 'Avenir';
+	src: url('../Font/Avenir.ttc');
+}
+
+:root{
+  --pink:#ff589e;
+  --light_pink:#FEA4CA;
+  --gradient: linear-gradient(127deg, var(--pink) 0%, #8261ee 100%);
+  --light_gradient: linear-gradient(127deg, var(--light_pink) 0%, #cabafe 91%);
+}
+
+.cgu_container{
+	display: flex;
+	flex-direction: column;
+	width: 85vw;
+	
+	background-color: white;
+    opacity: 0.9;
+	border-radius: 5vh;
+    box-shadow: 0px 0px 10px #bdc3c7;
+	margin-top : 2vh;
+	margin-bottom: 2vh;
+}
+
+.cgu_content{
+	margin-left: 2vw;
+	margin-right: 2vw;
+}
+
+.titre_cgu{
+	font-weight: bolder;
+	font-size: 3vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#titre2_cgu{
+	font-weight: bold;
+}
