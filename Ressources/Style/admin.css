@@ -1,9 +1,9 @@
-nav{
+/* nav{
     width: 5em;
     background-color: white;
 
     position: fixed;
-    height: 100vh:
+    height: 100vh;
     left: 0;
     top: 0;
     bottom: 0;
@@ -130,7 +130,7 @@ header .welcome-text {
 
 .home_logo a:hover{
     cursor: pointer;
-}
+} */
 
 body{
     margin: 0;

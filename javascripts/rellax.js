@@ -150,7 +150,7 @@
     // We want to cache the parallax blocks'
     // values: base, top, height, speed
     // el: is dom object, return: el cache values
-    var createBlock = function(el) {
+      var createBlock = function(el) {
       var dataPercentage = el.getAttribute( 'data-rellax-percentage' );
       var dataSpeed = el.getAttribute( 'data-rellax-speed' );
       var dataZindex = el.getAttribute( 'data-rellax-zindex' ) || 0;

@@ -1,5 +1,5 @@
 body{
-    background-image: -webkit-linear-gradient(#fbb5d2, #cabafe);
+    background-image: var(--light_gradient);
     background-size:cover;
     height: 100vh;
     width: 100vw;
@@ -7,8 +7,6 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-
 
 .connect_container{
     width: 50vh;
@@ -66,12 +64,17 @@ body{
     color : #474547;
 }
 
+#CGU{
+	color: #645483;
+    font-size: 1em;
+    transition: all 0.2s;
+}
 
 .form_container input:hover,.form_container input:focus{
     border: none;
     border-style: none;
     outline: none;
-    caret-color: #fbb5d2;
+    caret-color: var(--light_pink);
     box-shadow: 0px 0px 4px #bdc3c7;
 }
 .form_container input:focus{
@@ -94,7 +97,7 @@ body{
 }
 
 .form_container a:hover{
-    color: #ff589e;
+    color: var(--pink);
 }
 
 .connexion_button{
@@ -116,7 +119,7 @@ body{
     text-decoration: none;
     font-size: 1.4em;
     color: white;
-    background: #ff589e;
+    background: var(--pink);
     border-style: none;
     border:none;
     outline: none;
@@ -130,3 +133,4 @@ body{
     transform-origin: center;
     z-index: 10;
 }
+

@@ -1,3 +1,5 @@
+/* CE FICHIER PERMET DE METTRE EN FORME LES INPUTS D'UNE PAGE LORSQU'IL EST APPELÉ*/
+
 input{
     width: 100%;
     height: 7vh;
@@ -14,7 +16,7 @@ input:hover, input:focus, textarea:hover, textarea:focus{
     border: none;
     border-style: none;
     outline: none;
-    caret-color: #fbb5d2;
+    caret-color: var(--light_pink);
     box-shadow: 0px 0px 4px #bdc3c7;
   }
 
